@@ -60,21 +60,9 @@
     }
   },
   "people": [
-    {
-      "name": "Özden",
-      "fullname": "Özden",
-      "email": "ozdeaktasozer@gmail.com"
-    },
-    {
-      "name": "Burak",
-      "fullname": "Burak",
-      "email": ""
-    },
-    {
-      "name": "Doğukan",
-      "fullname": "Doğukan",
-      "email": ""
-    }
+    "Özden",
+    "Burak",
+    "Doğukan"
   ],
   "meetings": [
     {
@@ -257,8 +245,7 @@
       "end_time": "17:30",
       "frequency": "Her Hafta",
       "start_date": "2026-02-02",
-      "location": "Ofis",
-      "end_date": "2026-12-31"
+      "location": "Ofis"
     },
     {
       "title": "Liderler Topantısı",
@@ -270,8 +257,7 @@
       "end_time": "12:00",
       "frequency": "Her Hafta",
       "start_date": "2026-02-02",
-      "location": "Ofis",
-      "end_date": "2026-12-31"
+      "location": "Ofis"
     },
     {
       "title": "Smart Stock",
@@ -284,7 +270,18 @@
       "frequency": "Her Hafta",
       "start_date": "2026-02-02",
       "end_date": "2026-12-31"
+    },
+    {
+      "title": "hakkı ile yemek",
+      "day": "Salı",
+      "start_time": "10:00",
+      "end_time": "17:00",
+      "frequency": "Her Hafta",
+      "attendees": [
+        "Özden"
+      ],
+      "start_date": "2026-02-02",
+      "end_date": "2026-12-31"
     }
-  ],
-  "exceptions": []
+  ]
 }

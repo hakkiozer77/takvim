@@ -5,3 +5,4 @@ streamlit
 watchdog
 ics
 streamlit-calendar
+altair<5
