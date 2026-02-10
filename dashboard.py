@@ -210,14 +210,18 @@ if menu == "Web Takvimi":
             view_mode = st.selectbox("Görünüm", ["Haftalık (Etkileşimli)", "Aylık (Etkileşimli)", "Klasik (Resim)"])
         with c3:
             st.write("") # Hizalama için boşluk
-            if st.button("📅 Outlook ICS İndir"):
+            if st.button("📅 Outlook ICS İndir (Bu Hafta)"):
                 c = Calendar()
                 today = datetime.date.today()
-                # Bu yılın tamamı için
-                start_range = datetime.date(today.year, 1, 1)
-                end_range = datetime.date(today.year, 12, 31)
                 
-                st.info("ICS dosyası hazırlanıyor...")
+                # Sadece bu haftanın Pazartesi - Cuma arası
+                start_week = today - datetime.timedelta(days=today.weekday())
+                end_week = start_week + datetime.timedelta(days=4)
+                
+                start_range = start_week
+                end_range = end_week
+                
+                st.info(f"{start_range} - {end_range} aralığı için ICS hazırlanıyor...")
                 
                 # Kişi Haritası (Email için)
                 person_map = {}

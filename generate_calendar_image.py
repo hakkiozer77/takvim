@@ -147,8 +147,14 @@ def draw_weekly_view(ax, data, week_start_date):
     # Başlık
     week_end_date = week_start_date + datetime.timedelta(days=4)
     header_text = f"{week_start_date.day} {TR_MONTHS[week_start_date.month]} - {week_end_date.day} {TR_MONTHS[week_end_date.month]} {week_start_date.year}"
+    
+    # Sayfa düzeni ayarları (Margins)
+    plt.subplots_adjust(top=0.85, bottom=0.15, left=0.05, right=0.95)
+
     # Başlığı biraz daha yukarı al (boşluk artırma)
-    ax.text(len(days)/2, work_start_min - 70, header_text, ha='center', va='center', fontsize=20, fontweight='bold', color='#333333')
+    # Veri koordinatlarında çiziyoruz. Eksenin üstü work_start_min.
+    # 80 birim yukarı alalım.
+    ax.text(len(days)/2, work_start_min - 80, header_text, ha='center', va='center', fontsize=20, fontweight='bold', color='#333333')
 
     # Eksen Ayarları
     ax.set_ylim(work_end_min, work_start_min)
@@ -171,7 +177,7 @@ def draw_weekly_view(ax, data, week_start_date):
         current_day = week_start_date + datetime.timedelta(days=i)
         day_label = f"{day}\n{current_day.day} {TR_MONTHS[current_day.month]}"
         # Gün başlıklarını ızgaradan biraz uzaklaştır
-        ax.text(i + 0.5, work_start_min - 20, day_label, ha='center', va='center', fontsize=14, fontweight='bold', color='#333333')
+        ax.text(i + 0.5, work_start_min - 30, day_label, ha='center', va='center', fontsize=14, fontweight='bold', color='#333333')
 
     # Y Eksen Etiketleri
     yticks = []
@@ -416,10 +422,14 @@ def draw_weekly_view(ax, data, week_start_date):
         if key == "Mixed": continue
         legend_elements.append(patches.Patch(facecolor=val['bg'], edgecolor=val['border'], label=val['label']))
     
-    # Lejant konumunu ve boşluklarını ayarla (header ile çakışmaması ve öğeler arası boşluk için)
-    ax.legend(handles=legend_elements, loc='upper right', bbox_to_anchor=(1, 1.15), 
-              ncol=len(legend_elements), frameon=False, fontsize=12, 
-              columnspacing=1.5, handletextpad=0.5)
+    # Lejant konumunu en alta al (footer gibi)
+    # Axes coordinates: (0,0) sol alt, (1,1) sağ üst.
+    # (0.5, -0.12) eksenin %12 altında ortala.
+    # subplots_adjust(bottom=0.15) ile altta yer açtık.
+    ncol_val = max(1, min(len(legend_elements), 5))
+    ax.legend(handles=legend_elements, loc='upper center', bbox_to_anchor=(0.5, -0.12),
+              ncol=ncol_val, frameon=False, fontsize=12, 
+              columnspacing=2.0, handletextpad=0.5)
     
     ax.spines['top'].set_visible(False)
     ax.spines['right'].set_visible(False)
