@@ -21,7 +21,7 @@ if 'logged_in' not in st.session_state:
 if not st.session_state.logged_in:
     col1, col2, col3 = st.columns([1, 1, 1])
     with col2:
-        st.title("🔐 Giriş Yap")
+        st.title("🔐 Firiş Yap")
         st.markdown("Devam etmek için lütfen giriş yapınız.")
         
         with st.form("login_form"):
