@@ -234,14 +234,15 @@ if menu == "Web Takvimi":
             
             for i in range(day_count + 1):
                 curr_date = calc_start + datetime.timedelta(days=i)
+                
+                if curr_date.weekday() >= 5: # Haftasonu
+                    continue
+
                 day_str = TR_DAYS[curr_date.weekday()]
                 date_str = curr_date.strftime("%Y-%m-%d")
                 
                 # Tatil kontrolü
                 if date_str in holidays:
-                    continue
-                    
-                if curr_date.weekday() >= 5: # Haftasonu
                     continue
                 
                 # O günün toplantılarını bul
