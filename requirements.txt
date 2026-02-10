@@ -1,7 +1,7 @@
 openpyxl
 pandas
 matplotlib
-streamlit
+streamlit>=1.41.0
 watchdog
 ics
 streamlit-calendar
