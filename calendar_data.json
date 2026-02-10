@@ -1,0 +1,287 @@
+{
+  "holidays": {
+    "2026-01-01": "Yılbaşı",
+    "2026-03-19": "Ramazan Bayramı Arifesi (Yarım Gün)",
+    "2026-03-20": "Ramazan Bayramı 1. Gün",
+    "2026-03-21": "Ramazan Bayramı 2. Gün",
+    "2026-03-22": "Ramazan Bayramı 3. Gün",
+    "2026-04-23": "Ulusal Egemenlik ve Çocuk Bayramı",
+    "2026-05-01": "Emek ve Dayanışma Günü",
+    "2026-05-19": "Atatürk'ü Anma, Gençlik ve Spor Bayramı",
+    "2026-05-26": "Kurban Bayramı Arifesi (Yarım Gün)",
+    "2026-05-27": "Kurban Bayramı 1. Gün",
+    "2026-05-28": "Kurban Bayramı 2. Gün",
+    "2026-05-29": "Kurban Bayramı 3. Gün",
+    "2026-05-30": "Kurban Bayramı 4. Gün",
+    "2026-07-15": "Demokrasi ve Milli Birlik Günü",
+    "2026-08-30": "Zafer Bayramı",
+    "2026-10-29": "Cumhuriyet Bayramı"
+  },
+  "settings": {
+    "work_start": "08:00",
+    "work_end": "17:30",
+    "lunch_break": {
+      "start": "12:30",
+      "end": "13:30"
+    },
+    "days": [
+      "Pazartesi",
+      "Salı",
+      "Çarşamba",
+      "Perşembe",
+      "Cuma"
+    ],
+    "colors": {
+      "All Team": {
+        "bg": "#FFCCCC",
+        "border": "#FF0000",
+        "label": "Tüm Ekip"
+      },
+      "Özden": {
+        "bg": "#FFE6CC",
+        "border": "#FF9900",
+        "label": "Özden"
+      },
+      "Burak": {
+        "bg": "#E2F0D9",
+        "border": "#548235",
+        "label": "Burak"
+      },
+      "Doğukan": {
+        "bg": "#DEEBF7",
+        "border": "#2F75B5",
+        "label": "Doğukan"
+      },
+      "Mixed": {
+        "bg": "#E0E0E0",
+        "border": "#666666",
+        "label": "Karma / Diğer"
+      }
+    }
+  },
+  "people": [
+    "Özden",
+    "Burak",
+    "Doğukan"
+  ],
+  "meetings": [
+    {
+      "title": "Proje Statü Takip Toplantısı",
+      "attendees": [
+        "Özden",
+        "Burak",
+        "Doğukan"
+      ],
+      "day": "Salı",
+      "start_time": "09:00",
+      "end_time": "12:00",
+      "frequency": "İki Haftada Bir",
+      "start_date": "2026-02-02",
+      "end_date": "2026-12-31"
+    },
+    {
+      "title": "Business Analysis Team Meeting",
+      "attendees": [
+        "Özden",
+        "Burak",
+        "Doğukan"
+      ],
+      "day": "Salı",
+      "start_time": "13:30",
+      "end_time": "14:15",
+      "frequency": "Her Hafta",
+      "start_date": "2026-02-02",
+      "end_date": "2026-12-31"
+    },
+    {
+      "title": "PM Steerco",
+      "attendees": [
+        "Burak"
+      ],
+      "day": "Pazartesi",
+      "start_time": "13:30",
+      "end_time": "15:00",
+      "frequency": "Aylık (Son Pazartesi)",
+      "start_date": "2026-02-02",
+      "end_date": "2026-12-31"
+    },
+    {
+      "title": "Kurumsal Gel. ve Str. Prg.",
+      "attendees": [
+        "Özden",
+        "Burak",
+        "Doğukan"
+      ],
+      "day": "Çarşamba",
+      "start_time": "09:00",
+      "end_time": "10:00",
+      "frequency": "Her Hafta",
+      "start_date": "2026-02-02",
+      "end_date": "2026-12-31"
+    },
+    {
+      "title": "FKK Projesi - MVP2 Haftalık Statü",
+      "attendees": [
+        "Özden",
+        "Burak",
+        "Doğukan"
+      ],
+      "day": "Perşembe",
+      "start_time": "10:00",
+      "end_time": "11:30",
+      "frequency": "Her Hafta",
+      "start_date": "2026-02-02",
+      "end_date": "2026-12-31"
+    },
+    {
+      "title": "Dynamics Bulguları - Hizalanma Toplantısı",
+      "attendees": [
+        "Özden",
+        "Burak",
+        "Doğukan"
+      ],
+      "day": "Cuma",
+      "start_time": "11:00",
+      "end_time": "12:00",
+      "frequency": "Her Hafta",
+      "start_date": "2026-02-02",
+      "end_date": "2026-12-31"
+    },
+    {
+      "title": "Seyahat - Masraf Projesi",
+      "attendees": [
+        "Özden",
+        "Doğukan"
+      ],
+      "day": "Çarşamba",
+      "start_time": "13:30",
+      "end_time": "16:00",
+      "frequency": "Her Hafta",
+      "start_date": "2026-02-02",
+      "end_date": "2026-12-31"
+    },
+    {
+      "title": "Sözleşme Süreci",
+      "attendees": [
+        "Özden",
+        "Doğukan"
+      ],
+      "day": "Çarşamba",
+      "start_time": "16:30",
+      "end_time": "17:30",
+      "frequency": "Her Hafta",
+      "start_date": "2026-02-02",
+      "end_date": "2026-12-31"
+    },
+    {
+      "title": "Arşiv Projesi",
+      "attendees": [
+        "Özden",
+        "Doğukan"
+      ],
+      "day": "Perşembe",
+      "start_time": "13:30",
+      "end_time": "15:00",
+      "frequency": "Her Hafta",
+      "start_date": "2026-02-02",
+      "end_date": "2026-12-31"
+    },
+    {
+      "title": "Muhaberat Projesi",
+      "attendees": [
+        "Özden",
+        "Doğukan"
+      ],
+      "day": "Perşembe",
+      "start_time": "15:30",
+      "end_time": "17:00",
+      "frequency": "Her Hafta",
+      "start_date": "2026-02-02",
+      "end_date": "2026-12-31"
+    },
+    {
+      "title": "Kyriba - Banka Entegrasyonu",
+      "attendees": [
+        "Burak"
+      ],
+      "day": "Çarşamba",
+      "start_time": "15:00",
+      "end_time": "17:00",
+      "frequency": "İki Haftada Bir",
+      "start_date": "2026-02-02",
+      "end_date": "2026-12-31"
+    },
+    {
+      "title": "PM",
+      "attendees": [
+        "Burak"
+      ],
+      "day": "Salı",
+      "start_time": "15:00",
+      "end_time": "17:00",
+      "frequency": "Her Hafta",
+      "start_date": "2026-02-02",
+      "end_date": "2026-12-31"
+    },
+    {
+      "title": "PM",
+      "attendees": [
+        "Burak"
+      ],
+      "day": "Perşembe",
+      "start_time": "15:00",
+      "end_time": "17:00",
+      "frequency": "Her Hafta",
+      "start_date": "2026-02-02",
+      "end_date": "2026-12-31"
+    },
+    {
+      "title": "xxxx",
+      "attendees": [
+        "Doğukan"
+      ],
+      "day": "Perşembe",
+      "start_time": "17:00",
+      "end_time": "17:30",
+      "frequency": "Her Hafta",
+      "start_date": "2026-02-02",
+      "location": "Ofis"
+    },
+    {
+      "title": "Liderler Topantısı",
+      "attendees": [
+        "Özden"
+      ],
+      "day": "Pazartesi",
+      "start_time": "11:00",
+      "end_time": "12:00",
+      "frequency": "Her Hafta",
+      "start_date": "2026-02-02",
+      "location": "Ofis"
+    },
+    {
+      "title": "Smart Stock",
+      "attendees": [
+        "Burak"
+      ],
+      "day": "Cuma",
+      "start_time": "15:00",
+      "end_time": "17:00",
+      "frequency": "Her Hafta",
+      "start_date": "2026-02-02",
+      "end_date": "2026-12-31"
+    },
+    {
+      "title": "hakkı ile yemek",
+      "day": "Salı",
+      "start_time": "10:00",
+      "end_time": "17:00",
+      "frequency": "Her Hafta",
+      "attendees": [
+        "Özden"
+      ],
+      "start_date": "2026-02-02",
+      "end_date": "2026-12-31"
+    }
+  ]
+}

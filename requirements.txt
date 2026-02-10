@@ -1,0 +1,7 @@
+openpyxl
+pandas
+matplotlib
+streamlit
+watchdog
+ics
+streamlit-calendar
