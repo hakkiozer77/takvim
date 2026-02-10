@@ -231,21 +231,21 @@ if menu == "Web Takvimi":
                         if m['day'] != day_str: continue
                         
                         try:
-                            m_start = datetime.datetime.strptime(m.get('start_date', '2026-01-01'), "%Y-%m-%d").date()
-                            m_end = datetime.datetime.strptime(m.get('end_date', '2026-12-31'), "%Y-%m-%d").date()
+                            m_start_date = datetime.datetime.strptime(m.get('start_date', '2026-01-01'), "%Y-%m-%d").date()
+                            m_end_date = datetime.datetime.strptime(m.get('end_date', '2026-12-31'), "%Y-%m-%d").date()
                         except (ValueError, TypeError):
                              m_start_date = datetime.date(2026, 1, 1)
                              m_end_date = datetime.date(2026, 12, 31)
                         
-                        if not (m_start_date <= curr <= m_end): continue
+                        if not (m_start_date <= curr <= m_end_date): continue
                         
                         # Sıklık
                         show = False
                         if m['frequency'] == "Her Hafta": show = True
                         elif m['frequency'] == "İki Haftada Bir":
-                            if ((curr - m_start).days // 7) % 2 == 0: show = True
+                            if ((curr - m_start_date).days // 7) % 2 == 0: show = True
                         elif m['frequency'] == "Tek Seferlik":
-                            if curr == m_start: show = True
+                            if curr == m_start_date: show = True
                         
                         if show:
                             try:
