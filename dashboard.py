@@ -8,7 +8,7 @@ from streamlit_calendar import calendar
 from ics import Calendar, Event
 
 st.set_page_config(
-    page_title="BA Toplantı Yönetim Sistemi",
+    page_title="özden Toplantı Yönetim Sistemi",
     page_icon="📅",
     layout="wide",
     initial_sidebar_state="collapsed"
