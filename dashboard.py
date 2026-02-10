@@ -14,6 +14,31 @@ st.set_page_config(
     initial_sidebar_state="collapsed"
 )
 
+# --- Login System ---
+if 'logged_in' not in st.session_state:
+    st.session_state.logged_in = False
+
+if not st.session_state.logged_in:
+    col1, col2, col3 = st.columns([1, 1, 1])
+    with col2:
+        st.title("🔐 Giriş Yap")
+        st.markdown("Devam etmek için lütfen giriş yapınız.")
+        
+        with st.form("login_form"):
+            username = st.text_input("Kullanıcı Adı")
+            password = st.text_input("Şifre", type="password")
+            submit = st.form_submit_button("Giriş Yap")
+            
+            if submit:
+                # Basit yetkilendirme (Geliştirilebilir)
+                if username == "admin" and password == "admin123":
+                    st.session_state.logged_in = True
+                    st.success("Giriş başarılı!")
+                    st.rerun()
+                else:
+                    st.error("Hatalı kullanıcı adı veya şifre!")
+    st.stop() # Giriş yapılmadıysa uygulamanın geri kalanını çalıştırma
+
 # --- Sabitler ---
 JSON_FILE = 'calendar_data.json'
 BACKUP_DIR = 'backups'
